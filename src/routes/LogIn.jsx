@@ -29,6 +29,7 @@ const LogIn = () => {
         <main>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
+
               <label htmlFor="name">
                 <input
                   type="text"
