@@ -1,17 +1,18 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const URL = 'http://localhost:3000/api/v1/reservations';
+const URL = 'http://localhost:3000/api/v1/login';
 
 const initialState = {
-  reservationsItems: [],
+  userName: '',
+  userId: null,
   ifSucceed: false,
   ifLoading: false,
   errors: null,
 };
 
-export const createReservation = createAsyncThunk(
-  'reservations/createReservation',
+export const submitLoginForm = createAsyncThunk(
+  'login/submitLoginForm',
   async (formData, { rejectWithValue }) => {
     try {
       const response = await axios.post(URL, formData);
@@ -22,28 +23,29 @@ export const createReservation = createAsyncThunk(
   }
 );
 
-const reservationsSlice = createSlice({
-  name: 'reservations',
+const loginSlice = createSlice({
+  name: 'login',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(createReservation.pending, (state) => ({
+      .addCase(submitLoginForm.pending, (state) => ({
         ...state,
-        isLoading: true,
+        ifLoading: true,
       }))
-      .addCase(createReservation.fulfilled, (state, action) => ({
+      .addCase(submitLoginForm.fulfilled, (state, action) => ({
         ...state,
-        isLoading: false,
+        ifLoading: false,
         ifSucceed: true,
-        reservationsItems: [...state.reservationsItems, action.payload],
+        userId: action.payload.id,
+        userName: action.payload.name,
       }))
-      .addCase(createReservation.rejected, (state, action) => ({
+      .addCase(submitLoginForm.rejected, (state, action) => ({
         ...state,
-        isLoading: false,
+        ifLoading: false,
         errors: action.payload,
       }));
   },
 });
 
-export default reservationsSlice.reducer;
+export default loginSlice.reducer;
