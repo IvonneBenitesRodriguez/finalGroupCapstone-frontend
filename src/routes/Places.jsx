@@ -80,7 +80,11 @@ const WebPlaceList = ({
       <div className="pagination">
         <div
           className={`button-boxleft ${currentPage === 0 ? 'disabled' : ''}`}
-        />
+        >
+
+          <Icon color="#fff" icon="bx:left-arrow" />
+
+        </div>
         <div
           className={`button-boxright ${
             places.length <= (currentPage + 1) * 3 ? 'disabled' : ''
@@ -102,8 +106,6 @@ WebPlaceList.propTypes = {
     }),
   ).isRequired,
   currentPage: PropTypes.number.isRequired,
-  // handlePreviousPage: PropTypes.func.isRequired,
-  // handleNextPage: PropTypes.func.isRequired,
 };
 
 const MobilePlaceList = ({ places }) => (
