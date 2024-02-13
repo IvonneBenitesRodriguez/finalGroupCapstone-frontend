@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
-import { submitSignupForm } from '../redux/signup/signupSlice';
+import { submitSignupForm } from '../redux/users/usersSlice';
 import './Signup.scss';
 
 export const Signup = () => {
@@ -39,6 +39,7 @@ export const Signup = () => {
                 onChange={(e) => setUserName(e.target.value)}
                 className="form-control"
               />
+
             </div>
             <div className="d-grid mt-5">
               <input
