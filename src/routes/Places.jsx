@@ -62,7 +62,7 @@ Place.propTypes = {
 };
 
 const WebPlaceList = ({
-  places, currentPage, handlePreviousPage, handleNextPage,
+  places, currentPage,
 }) => {
   const itemsPerPage = 3;
   const startIndex = currentPage * itemsPerPage;
@@ -81,29 +81,15 @@ const WebPlaceList = ({
         <div
           className={`button-boxleft ${currentPage === 0 ? 'disabled' : ''}`}
         >
-          <button
-            type="button"
-            className="pagination-button"
-            disabled={currentPage === 0}
-            onClick={handlePreviousPage}
-          >
-            <Icon color="#fff" icon="bx:left-arrow" />
-          </button>
+
+          <Icon color="#fff" icon="bx:left-arrow" />
+
         </div>
         <div
           className={`button-boxright ${
             places.length <= (currentPage + 1) * 3 ? 'disabled' : ''
           }`}
-        >
-          <button
-            type="button"
-            className="pagination-button"
-            disabled={places.length <= (currentPage + 1) * 3}
-            onClick={handleNextPage}
-          >
-            <Icon color="#fff" icon="bx:right-arrow" />
-          </button>
-        </div>
+        />
       </div>
     </div>
   );
@@ -120,8 +106,6 @@ WebPlaceList.propTypes = {
     }),
   ).isRequired,
   currentPage: PropTypes.number.isRequired,
-  handlePreviousPage: PropTypes.func.isRequired,
-  handleNextPage: PropTypes.func.isRequired,
 };
 
 const MobilePlaceList = ({ places }) => (

@@ -59,7 +59,7 @@ const PlaceDetails = () => {
         </div>
       </section>
       <div className="button-boxleft buttonBackPos">
-        <button type="button" className="no-style-button pagination-button" onClick={handleBackClick}>
+        <button type="button" aria-label="Go back" className="no-style-button pagination-button" onClick={handleBackClick}>
           <Icon color="#fff" icon="bx:left-arrow" />
         </button>
       </div>
