@@ -52,28 +52,30 @@
 }
 
 .img-cont {
+  display: flex;
   width: 250px;
   height: 250px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .circle {
+  display: flex;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  display: flex;
   justify-content: center;
-  align-items: center;
   background-color: silver;
+
+  /* align-items: center; */
 }
 
 .img {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+
+  /* border-radius: 50%; */
 }
 
 .circle:hover .img {

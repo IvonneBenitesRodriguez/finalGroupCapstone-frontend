@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Reservation = ({
-  startDate, endDate, bill, reserveId, place,
+  startDate, endDate, bill, place,
 }) => (
   <li className="each-item mb-4 mt-2">
 
@@ -13,10 +13,6 @@ const Reservation = ({
       </div>
       <h2 className="location">{place[0].location}</h2>
       <p className="dots">....................</p>
-      <h2 className="location">
-        Reserve ID:
-        {reserveId}
-      </h2>
     </div>
 
     <p className="description">
@@ -38,7 +34,7 @@ Reservation.propTypes = {
   startDate: PropTypes.string.isRequired,
   endDate: PropTypes.string.isRequired,
   bill: PropTypes.number.isRequired,
-  reserveId: PropTypes.number.isRequired,
+  // reserveId: PropTypes.number.isRequired,
   place: PropTypes.arrayOf(
     PropTypes.object.isRequired,
   ).isRequired,

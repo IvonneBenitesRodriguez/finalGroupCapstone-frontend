@@ -35,6 +35,12 @@ const PlaceDetails = () => {
               <td colSpan="3">Kitchen TV Wifi </td>
             </tr>
             <tr>
+              <td colSpan="3">BasketBall Play Ground </td>
+            </tr>
+            <tr>
+              <td colSpan="3">Warm Swimming Pool </td>
+            </tr>
+            <tr>
               <td className="fw-bold" colSpan="3">
                 $
                 {place.rate}
@@ -47,7 +53,7 @@ const PlaceDetails = () => {
         </table>
         <div>
           <Link className="place-link detailsText fw-bold d-flex align-items-center justify-content-center" to="/" style={{ fontSize: '13px' }}>
-            DISCOVER MORE PLACES
+            DISCOVER MORE HOTELS
             <Icon icon="iconamoon:arrow-right-2-bold" color="#f7db59" width="20" height="20" />
           </Link>
         </div>
@@ -59,7 +65,7 @@ const PlaceDetails = () => {
         </div>
       </section>
       <div className="button-boxleft buttonBackPos">
-        <button type="button" aria-label="Go back" className="no-style-button pagination-button" onClick={handleBackClick}>
+        <button type="button" className="no-style-button pagination-button" onClick={handleBackClick}>
           <Icon color="#fff" icon="bx:left-arrow" />
         </button>
       </div>

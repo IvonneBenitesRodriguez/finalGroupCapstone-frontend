@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const LOGIN_URL = 'http://localhost:3000/api/v1/login';
-const SIGNUP_URL = 'http://localhost:3000/api/v1/signup';
+const LOGIN_URL = 'http://127.0.0.1:3000/api/v1/login';
+const SIGNUP_URL = 'http://127.0.0.1:3000/api/v1/signup';
 
 const initialState = {
   userName: '',

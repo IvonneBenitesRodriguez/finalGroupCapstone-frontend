@@ -39,7 +39,7 @@ const DeletePlace = () => {
   if (selectedValue === undefined) {
     return (
       <div className="d-flex flex-column justify-content-center align-items-center vh-100 empty-places">
-        <h2 className="mb-3 fs-3 fw-bold text-white Open-sans ">There is no places.</h2>
+        <h2 className="mb-3 fs-3 fw-bold text-white Open-sans ">There is no hotels.</h2>
       </div>
     );
   }
@@ -55,9 +55,9 @@ const DeletePlace = () => {
     ), url(${selectedValue.photo})`,
       }}
     >
-      <h2 className="mb-3 fs-3 fw-bold text-white Open-sans ">DELETE PLACE</h2>
+      <h2 className="mb-3 fs-3 fw-bold text-white Open-sans ">DELETE HOTEL</h2>
       <div className="mb-3 title-line" />
-      <p className="text-center main-p">To delete a place please select it and click on the Remove Place button.</p>
+      <p className="text-center main-p">To delete a hotel please select it and click on the Remove Hotel button.</p>
       <div className="d-flex selectAndButton">
         <select className="ps-3 pe-3 rounded-5 place-select" id="selectPlace" ref={selectRef} onChange={handlerChange}>
           {places.map((place) => (
@@ -66,7 +66,7 @@ const DeletePlace = () => {
             </option>
           ))}
         </select>
-        <button type="button" className="btn btn-danger rounded-5 ms-4 mt-3 remove-button" onClick={() => openModal()}>Remove Place</button>
+        <button type="button" className="btn btn-danger rounded-5 ms-4 mt-3 remove-button" onClick={() => openModal()}>Remove Hotel</button>
       </div>
       {isModalOpen && (
         <PlaceModal

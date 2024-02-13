@@ -20,7 +20,23 @@ body {
   display: flex;
   min-width: 55px;
   justify-content: center;
-  color: #ff385c;
+  color: rgb(104, 219, 104);
+}
+
+/* logo */
+.logoo {
+  background-image: url('../assets/images/star.png');
+
+  /* Set width and height */
+  width: 40px;
+  height: 40px;
+
+  /* Optionally adjust other styles like background size and position */
+  background-size: contain;
+  background-position: center;
+
+  /* Hide any text content */
+  text-indent: -9999px;
 }
 
 /* Sidebar */
@@ -47,8 +63,8 @@ body {
 .logo_name {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 2vh;
-  color: #ff385c;
+  font-size: 30px;
+  color: rgb(104, 219, 104);
   transition: all 0.3s ease;
 }
 

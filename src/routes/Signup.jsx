@@ -29,17 +29,17 @@ export const Signup = () => {
         <main>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
-
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Username"
-                value={userName}
-                onChange={(e) => setUserName(e.target.value)}
-                className="form-control"
-              />
-
+              <label htmlFor="name">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Username"
+                  value={userName}
+                  onChange={(e) => setUserName(e.target.value)}
+                  className="form-control"
+                />
+              </label>
             </div>
             <div className="d-grid mt-5">
               <input

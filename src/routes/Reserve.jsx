@@ -64,7 +64,7 @@ const Reserve = () => {
       <div className="reserve--container">
         <header>
           <h1 className="text-uppercase text-center fs-3 mb-4 fw-bold">
-            Book a place
+            Book a Hotel
           </h1>
         </header>
         <main>
@@ -72,9 +72,9 @@ const Reserve = () => {
             <>
               <div className="text-center mb-4">
                 <small>
-                  Located in
-                  {' '}
                   {place.location}
+                  {' '}
+                  ~5 Stars
                   <br />
                   {place.description}
                   <br />
@@ -146,7 +146,7 @@ const Reserve = () => {
                 required
               >
                 <option value="" disabled>
-                  Please select a place
+                  Please select a hotel
                 </option>
                 {places.map((place) => (
                   <option key={place.id} value={place.id}>

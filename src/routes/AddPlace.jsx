@@ -45,16 +45,16 @@ const Form = () => {
         <input
           className="input"
           type="text"
-          value={photo}
-          onChange={(e) => setPhoto(e.target.value)}
-          placeholder="Image URL"
+          value={location}
+          onChange={(e) => setLocation(e.target.value)}
+          placeholder="Location"
         />
         <input
           className="input"
           type="text"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
-          placeholder="Location"
+          value={photo}
+          onChange={(e) => setPhoto(e.target.value)}
+          placeholder="Image URL"
         />
         <input
           className="input"
@@ -74,7 +74,7 @@ const Form = () => {
         <input
           className="add-btn"
           type="submit"
-          value="Add Place"
+          value="Add Hotel"
           title="Click this or press enter to submit"
         />
       </form>
@@ -84,7 +84,7 @@ const Form = () => {
 
 const AddPlace = () => (
   <div className="form-cont">
-    <h2 className="title">ADD A NEW PLACE</h2>
+    <h2 className="title">ADD A NEW HOTEL</h2>
     <Form />
   </div>
 );

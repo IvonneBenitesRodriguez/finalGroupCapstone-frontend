@@ -62,7 +62,7 @@ Place.propTypes = {
 };
 
 const WebPlaceList = ({
-  places, currentPage,
+  places, currentPage, handlePreviousPage, handleNextPage,
 }) => {
   const itemsPerPage = 3;
   const startIndex = currentPage * itemsPerPage;
@@ -81,18 +81,28 @@ const WebPlaceList = ({
         <div
           className={`button-boxleft ${currentPage === 0 ? 'disabled' : ''}`}
         >
-
-          <Icon color="#fff" icon="bx:left-arrow" />
-
+          <button
+            type="button"
+            className="pagination-button"
+            disabled={currentPage === 0}
+            onClick={handlePreviousPage}
+          >
+            <Icon color="#fff" icon="bx:left-arrow" />
+          </button>
         </div>
         <div
           className={`button-boxright ${
             places.length <= (currentPage + 1) * 3 ? 'disabled' : ''
           }`}
         >
-
-          <Icon color="#fff" icon="bx:right-arrow" />
-
+          <button
+            type="button"
+            className="pagination-button"
+            disabled={places.length <= (currentPage + 1) * 3}
+            onClick={handleNextPage}
+          >
+            <Icon color="#fff" icon="bx:right-arrow" />
+          </button>
         </div>
       </div>
     </div>
@@ -110,6 +120,8 @@ WebPlaceList.propTypes = {
     }),
   ).isRequired,
   currentPage: PropTypes.number.isRequired,
+  handlePreviousPage: PropTypes.func.isRequired,
+  handleNextPage: PropTypes.func.isRequired,
 };
 
 const MobilePlaceList = ({ places }) => (
@@ -166,8 +178,8 @@ const PlaceList = () => {
 
 const Places = () => (
   <div className="places-cont">
-    <h1 className="title">Anywhere, Any week</h1>
-    <p className="subtitle">Please select a Place</p>
+    <h1 className="title">Global Hotels, Anywhere</h1>
+    <p className="subtitle">Please select a Hotel</p>
     <div className="place-list-wrapper">
       <PlaceList />
     </div>

@@ -8,6 +8,7 @@ const NavigationBar = () => {
   const [isLocked, setIsLocked] = useState(true);
   const [isHoverable, setIsHoverable] = useState(true);
   const [isClosed, setIsClosed] = useState(true);
+  // eslint-disable-next-line no-unused-vars
   const [isHovering, setIsHovering] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const userId = useSelector((state) => state.users.userId);
@@ -21,19 +22,14 @@ const NavigationBar = () => {
   };
 
   const navLinks = [
-    { to: '/', icon: 'bx-sm bxs-building-house', text: 'PLACES' },
+    { to: '/', icon: 'bx-sm bxs-building-house', text: 'HOTELS' },
+    { to: '/addplace', icon: 'bx-sm bx-plus-circle', text: 'ADD HOTELS' },
+    { to: '/deleteplace', icon: 'bx-sm bx-bookmark-minus', text: 'DELETE HOTEL' },
     { to: '/reserve', icon: 'bx-sm bx-calendar-check bx-tada', text: 'RESERVE' },
     { to: '/myreservations', icon: 'bx-sm bx-list-check', text: 'MY RESERVATIONS' },
-    { to: '/deleteplace', icon: 'bx-sm bx-bookmark-minus', text: 'DELETE PLACE' },
-    { to: '/addplace', icon: 'bx-sm bx-location-plus', text: 'ADD PLACE' },
+
     getLoginLink(userId),
   ];
-
-  // Function to toggle the lock state of the sidebar
-  const toggleLock = () => {
-    setIsLocked(!isLocked);
-    setIsHoverable(!isLocked);
-  };
 
   // Function to hide the sidebar when the mouse leaves
   const hideSidebar = () => {
@@ -79,12 +75,10 @@ const NavigationBar = () => {
       <nav className={`sidebar ${isLocked ? 'locked' : ''} ${isClosed ? 'close' : ''}`} onMouseLeave={hideSidebar} onMouseEnter={showSidebar}>
         <div className="logo_items flex">
           <span className="nav_image">
-            <i className="bx bxl-airbnb bx-lg" color="orange" />
+            <span className="logo_name">5</span>
+            <i className="bx logoo bx-lg" color="orange" />
           </span>
-          <span className="logo_name">AirBnB</span>
-          {isHovering && (
-          <button type="button" aria-label="Unlock Sidebar" className={`bx ${isLocked ? ' bx-md bx-lock-open-alt' : 'bx-md bx-lock-alt'} no-style-button`} onClick={toggleLock} title="Unlock Sidebar" />
-          )}
+          <span className="logo_name">Hotels</span>
           <button type="button" aria-label="Close Sidebar" className="no-style-button bx bx-x bx-md" onClick={toggleSidebar} />
         </div>
 
