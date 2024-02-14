@@ -26,13 +26,16 @@
 
 > The Book a Hotel 🏩, our API will provide functionality to create, read, and destroy data related to hotels. It will serve as the server-side component responsible for handling requests and managing the database. The React client will interact with the backend to perform actions such as creating new hotels and reservations, see the hotel details, and removing hotels from the system.
 
-## 🛠 Deployed link: <a>
-https://book-an-appointment-cmm0.onrender.com/api-docs/v1/swagger.yaml
+## 🛠BackEnd Deployed link: <a>
+https://book-an-appointment-cmm0.onrender.com/
 </a>
 
 ## 🛠 Backend link: <a>
 https://github.com/IvonneBenitesRodriguez/finalGroupCapstone-backend/pull/25
 </a>
+
+ API documentation:
+[API DOC](https://book-an-appointment-cmm0.onrender.com/api-docs/v1/swagger.yaml)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -129,14 +132,6 @@ To run tests, run the following command:
 npm run test 
 ```
 
-```sh
-rspec spec --exclude-pattern "spec/integration/api/*_spec.rb"
-```
-To test the API documentation, run the following command:
-
-```sh
-rake rswag:specs:swaggerize
-```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="author"></a>
@@ -165,7 +160,7 @@ rake rswag:specs:swaggerize
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/dennis-every/book-an-appointment-api/issues).
+Feel free to check the [issues page](https://github.com/IvonneBenitesRodriguez/finalGroupCapstone-backend/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

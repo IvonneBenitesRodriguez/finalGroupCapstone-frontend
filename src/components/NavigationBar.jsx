@@ -24,7 +24,7 @@ const NavigationBar = () => {
   const navLinks = [
     { to: '/', icon: 'bx-sm bxs-building-house', text: 'HOTELS' },
     { to: '/addplace', icon: 'bx-sm bx-plus-circle', text: 'ADD HOTELS' },
-    { to: '/deleteplace', icon: 'bx-sm bx-bookmark-minus', text: 'DELETE HOTEL' },
+    { to: '/', icon: 'bx-sm bx-bookmark-minus', text: 'DELETE HOTEL' },
     { to: '/reserve', icon: 'bx-sm bx-calendar-check bx-tada', text: 'RESERVE' },
     { to: '/myreservations', icon: 'bx-sm bx-list-check', text: 'MY RESERVATIONS' },
 
