@@ -118,11 +118,16 @@ To run the project run the following commands:
 ```sh
 npm start 
 ```
-
+```sh
+npm run dev
+```
 ### Run tests
 
 To run tests, run the following command:
 
+```sh
+npm run test 
+```
 
 ```sh
 rspec spec --exclude-pattern "spec/integration/api/*_spec.rb"

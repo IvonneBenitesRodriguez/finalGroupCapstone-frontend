@@ -47,7 +47,7 @@ const Form = () => {
           type="text"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
-          placeholder="Location"
+          placeholder="name"
         />
         <input
           className="input"
