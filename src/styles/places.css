@@ -95,7 +95,7 @@
   align-items: center;
   position: absolute;
   top: 50%;
-  width: 108%;
+  width: 100%;
   box-sizing: border-box;
   transform: translateY(-50%);
 }
@@ -106,8 +106,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 55px;
-  height: 47px;
+  width: 40px;
+  height: 40px;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
 }
@@ -117,8 +117,8 @@
   align-self: flex-start;
   display: flex;
   align-items: center;
-  width: 55px;
-  height: 47px;
+  width: 40px;
+  height: 40px;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
 }

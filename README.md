@@ -1,5 +1,13 @@
 # 🏩 finalGroupCapstone-frontend
-
+<div align="center">
+  <h1><b>Book an appointment | Hotels</b></h1>
+  <img src="./src/assets/screenshot/hotelImage1.png" />
+  <img src="./src/assets/screenshot/hotelImage2.png" />
+  <img src="./src/assets/screenshot/hotelImage3.png" />
+  <img src="./src/assets/screenshot/hotelImage4.png" />
+  <img src="./src/assets/screenshot/hotelImage5.png" />
+  <img src="./src/assets/screenshot/hotelImage6.png" />
+</div>
 # 📗 Table of Contents
 
 - [🏩 finalGroupCapstone-frontend](#-finalgroupcapstone-frontend)
