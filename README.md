@@ -34,13 +34,15 @@
 
 > The Book a Hotel 🏩, our API will provide functionality to create, read, and destroy data related to hotels. It will serve as the server-side component responsible for handling requests and managing the database. The React client will interact with the backend to perform actions such as creating new hotels and reservations, see the hotel details, and removing hotels from the system.
 
-## 🛠BackEnd Deployed link: <a>
-https://book-an-appointment-cmm0.onrender.com/
-</a>
+## 🛠Live Demo
+[Live Demo](https://luminous-semolina-e113b8.netlify.app/)
 
-## 🛠 Backend link: <a>
-https://github.com/IvonneBenitesRodriguez/finalGroupCapstone-backend/pull/25
-</a>
+## 🛠BackEnd Deployed link
+[Backend Deployed link](https://book-an-appointment-cmm0.onrender.com/)
+
+## 🛠 Backend link:
+[Backend](https://github.com/IvonneBenitesRodriguez/finalGroupCapstone-backend/pull/25)
+
 
  API documentation:
 [API DOC](https://book-an-appointment-cmm0.onrender.com/api-docs/v1/swagger.yaml)
